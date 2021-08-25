@@ -1,0 +1,271 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: spartan;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.bg img {
+  display: block;
+  position: absolute;
+}
+
+.img-bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid green; */
+}
+
+.intro {
+  /* border: 2px solid green; */
+  flex-basis: 30%;
+  margin-left: 70px;
+}
+
+h1 {
+  font-size: 45px;
+  margin-top: 80px;
+  /* border: 2px solid green; */
+  color: hsl(300, 43%, 22%);
+}
+
+p {
+  /* border: 2px solid green; */
+  font-size: 15px;
+  margin-block: 10px;
+  color: hsl(303, 10%, 53%);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.rating {
+  /* border: 2px solid green; */
+  margin-top: 100px;
+  padding-right: 80px;
+  display: inline;
+}
+
+.rate{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rate-a {
+  /* border: 2px solid green; */
+  padding: 18px;
+  margin-block: 10px;
+  margin-left: 80px;
+  width: 400px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  color: hsl(300, 43%, 22%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.rate-b {
+  /* border: 2px solid green; */
+  padding: 18px;
+  margin-block: 15px;
+  margin-left: 120px;
+  width: 400px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  color: hsl(300, 43%, 22%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.rate-c {
+  /* border: 2px solid green; */
+  padding: 18px;
+  margin-block: 10px;
+  margin-left: 160px;
+  width: 400px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  color: hsl(300, 43%, 22%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid green; */
+  padding-inline: 150px;
+}
+
+.card img {
+  border-radius: 50px;
+  height: 40px;
+  margin-inline: 30px;
+  /* border: 2px solid green; */
+}
+
+.profile {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* border: 2px solid green; */
+  align-items: center;
+}
+
+yo {
+  /* border: 2px solid green; */
+  align-content: center;
+  font-size: 13px;
+}
+
+.first-card {
+  /* border: 2px solid green; */
+  background-color: hsl(300, 43%, 22%);
+  height: 240px;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.second-card {
+  /* border: 2px solid green; */
+  background-color: hsl(300, 43%, 22%);
+  margin-inline: 30px;
+  margin-top: 20px;
+  height: 240px;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.third-card {
+  /* border: 2px solid green; */
+  background-color: hsl(300, 43%, 22%);
+  margin-top: 40px;
+  height: 240px;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+yo {
+  color: hsl(0, 0%, 100%);
+}
+
+.buyer {
+  margin-top: 5px;
+  color: hsl(333, 80%, 67%);
+}
+
+.text {
+  color: hsl(300, 24%, 96%);
+  font-size: 13px;
+  text-align: justify;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1190px) {
+  body {
+    background-image: url("images/bg-pattern-top-mobile.svg"),
+      url("images/bg-pattern-bottom-mobile.svg");
+      background-repeat: no-repeat,no-repeat;
+    background-position: top left,right bottom;
+    /* background-attachment: ,scroll; */
+  }
+  
+  .bg {
+    display: none;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro {
+    margin-left: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 38px;
+  }
+
+  p {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.7;
+    margin-inline: 15px;
+  }
+
+  .rating {
+    padding-inline: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rate{
+      flex-direction: column;
+  }
+
+  .rate-a {
+    padding: 15px;
+    text-align: center;
+    margin-inline: 20px;
+    line-height: 1.8;
+    width: 330px;
+  }
+
+  .rate-b {
+    padding: 15px;
+    text-align: center;
+    margin-inline: 20px;
+    line-height: 1.8;
+    width: 330px;
+  }
+
+  .rate-c {
+    padding: 15px;
+    text-align: center;
+    margin-inline: 20px;
+    line-height: 1.8;
+    width: 330px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-inline: 0px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+
+  .first-card {
+    width: 330px;
+    margin-inline: 20px;
+  }
+
+  .second-card {
+    width: 330px;
+    margin-inline: 20px;
+    margin-bottom: 0px;
+  }
+
+  .third-card {
+    width: 330px;
+    margin-inline: 20px;
+    margin-top: 20px;
+  }
+}
